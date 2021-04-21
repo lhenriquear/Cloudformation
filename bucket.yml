@@ -1,0 +1,22 @@
+Description: Criar um bucket no S3
+
+
+Resources:
+  BucketNapoleonS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-napoleon-test
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+
+
+
+

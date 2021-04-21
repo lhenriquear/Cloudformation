@@ -1,0 +1,1 @@
+Criação de um template YAML usando cloudformation para gerar um bucket S3
